@@ -21,7 +21,7 @@ body{ background: -webkit-linear-gradient(15deg ,#FF7514,#1E2460);
      margin: auto;
      backdrop-filter: blur(100px);
      background-color: rgba(0, 0, 0, 0.5);
-     width: 500px;
+     width: 400px;
      height: 40rem;
      padding-top: 50px;
      border-radius: 30px;
@@ -30,8 +30,8 @@ body{ background: -webkit-linear-gradient(15deg ,#FF7514,#1E2460);
      }
 
 .spinner{
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     background: #f5dad8;
     border-radius: 50%;
     overflow: hidden;
@@ -63,17 +63,19 @@ img{
 }
 
 .inner{gap: 1rem;
-       animation: pedro 4.5s linear infinite;}
-
+       animation: pedro 9s linear infinite;}
+ 
 
 h1{ 
    text-align: center;
    padding-left: 500px;
-   width: 500px;
+   width: 800px;
 }
 
-h1,h3{color: white;
-      margin: 20px;}   
+h3{margin: 10px;
+   margin-top: -23px;}
+
+h1,h3{color: white;}   
 
 .fade{
     position: absolute;
@@ -85,5 +87,17 @@ h1,h3{color: white;
 @keyframes pedro {
     0%{transform: translate(0);}
 
-    100%{transform: translate(-200%);}
+    100%{transform: translate(-400%);}
 }      
+
+.fa{color: white;}
+
+.pl{text-align: center;
+    padding-top: 100px;}
+
+button{background: none;
+       border: none;
+       font-size: 2.5rem;}  
+       
+.sc{webkit-transform: scaleX(-1);
+    transform: scaleX(-1)}       
