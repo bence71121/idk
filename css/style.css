@@ -90,13 +90,41 @@ h1,h3{color: white;}
     100%{transform: translate(-400%);}
 }      
 
-.fa{color: white;}
 
 .pl{text-align: center;
     padding-top: 100px;}
+   
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-button{background: none;
-       font-size: 2.5rem;}  
-       
-.sc{-webkit-transform: scaleX(-1);
-    transform: scaleX(-1)}       
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 166, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
+}
+    
+#progress{
+    -webkit-appearance: none;
+    width: 85%;
+    height: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}    

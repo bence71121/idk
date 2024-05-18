@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fb89f9e40c.js" crossorigin="anonymous"></script>
+    <script src="js/java.js"></script>
     <title>Pedro</title>
 </head>
 <body>
@@ -19,12 +19,15 @@
     <h3>TommyS Music</h3>
     <div class="fade"></div>
     <div class="pl">
-    <button class="sc"><i class="fa-sharp fa fa-forward"></i></button>
-    <button id="play"><i class="fa-sharp fa fa-play"></i></button>
-    <button><i class="fa-sharp fa fa-forward"></i></button>
-    <audio controls id="play">
-        <source src="js/pedro.mp3" type="audio/mpeg">
+    <audio controls id="song">
+        <source src="song/pedro.mp3" type="audio/mpeg">
     </audio>
+    <input type="range" value="0" id="progress">
+    <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+    </div>    
     </div>
     </div>
     </article>
